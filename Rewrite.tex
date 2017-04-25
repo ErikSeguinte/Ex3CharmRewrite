@@ -12,7 +12,7 @@
 \usepackage{fancybox}
 \usepackage{fancyhdr}
 \usepackage{fontspec}
-%\usepackage{xunicode}
+\usepackage{xunicode}
 \usepackage{xltxtra}
 \usepackage{forloop}
 \usepackage[absolute,overlay]{textpos}
@@ -389,12 +389,15 @@
 \pgs{214}{224}
 \pdfbookmark[1]{Other Systems}{Other Systems}
 \pgs{225}{239}
+\clearpage
 
 \begin{bgPic}{resources/Systems-left.jpg}{resources/Systems-right.jpg}
 \begin{multicols}{2}
-\IfFileExists{Ex3Final.pdf}{}{
+\IfFileExists{Ex3Final.pdf}{
+}{
   \section*{Craft Rules}
 }
+\pdfbookmark[1]{Craft}{Craft}
   \par Basic projects are the simplest tasks a craftsman can undertake, such as making a chair, forging basic tools, shoeing a horse, cooking a meal, or fletching an arrow. They are resolved with a single roll. The character works for an amount of time deemed appropriate by the Storyteller, usually ranging from several minutes to several hours, then makes an (Attribute + Craft) roll against a difficulty set by the Storyteller.
 
   \par Major projects are significant endeavors within a craftsman's trade, anything larger or more complex than a wheelbarrow. They include forging suits of armor, preparing a banquet fit for a prince's table or a god's festival, or sculpting a statue. They are resolved by extended rolls with no fixed terminus, where each roll represents an expenditure of time and materials.
@@ -450,7 +453,91 @@
     \item +1 roll for having a Charm, spell, anima power, or other magical ability that's related to the Artifact.
   \end{itemize}
 
+  
+
   \par If you lose access to something that increases your terminus while working on an Artifact, you may either put the project on hold until you replace it or just accept the reduced terminus. If you use up all of your rolls, all is not lost. Ask the ST what you have to do to earn another roll. Chances are it won't be easy.
+
+  \subsection*{Exotic Materials}
+  \begin{sidebar}{Shall I forge thee from a summer’s day?}
+    Exalted often gives abstract examples for ECs, which can trip up STs and players.
+    How do I fold a Raksha’s love for a long dead peasant woman into my Essence Glider wings?
+
+    Suggestions:
+    \begin{itemize}
+      \item Allow a cool stunt to “capture” the item. The Crafter listens to the Raksha’s description of the fair maid, drawing her on his sketchpad. Then he catches one of the spirit’s perfect crystal tears on the finished product.
+
+      \item Don’t require physicality at all. Maybe the Crafter braves the Wyld to find the noble, and convince him to open up and tell his story. Having heard it, the Crafter’s soul contains what he needs.
+
+      \item Use a place. The Crafter does the final quenching for the Wings in the very spot the Raksha stood when he beheld his love.
+
+      \item WST: It can be a cop-out, but demanding the Wyld become the Thing can work.
+
+      \item Working: Same as above, and in this case perhaps self-defeating as the character has to invent the Working, too.
+    \end{itemize}
+  \end{sidebar}
+
+  Artifacts are more than just the base metal from which they are forged.
+  This is modeled by the related concepts of Touchstones and Exotic Components.
+
+  \subsubsection*{Touchstones}
+  A Touchstone is a word or short phrase embodying an aspect of the Artifact’s story or power.
+  Touchstones are a foundation upon which to build the fluff and crunch of a wonder.
+  Artifacts generally have (Rating-1, min 1) Touchstones.
+  Volcano Cutter would have “lava” as a Touchstone; Beloved Adorei has “devotion.”
+
+  The look, theme, personality, and powers of an Artifact should be inspired by its Touchstones, and the ECs used in its construction relate to them.
+  While some charms modify them, fundamentally Touchstones exist as an aid for players and STs to tie Artifact crunch and narrative together.
+
+  \subsubsection*{Exotic Components}
+  Exotic components can be just about anything.
+  A couple general categories may include:
+
+  \begin{itemize}
+    \item A rare or highly perishable naturally occurring item.
+    The last acorn of a thousand year-old oak.
+    \item An experience.
+    When the Dawn witnessed the sunrise from Meru’s summit, her heart was filled with such hope and purpose it would inevitably find its way into her new armor.
+    \item A deliberately Crafted item of exacting specification.
+    A bowl made by a traditional Haslanti potter with clay from the depths of the sea in the West, created in darkness.
+    \item The remains of a creature, probably powerful or harvested in some exacting fashion.
+    \item Abstract concepts.
+    A Raksha’s honor.
+    An old man’s regret.
+    A fallen empire’s name.
+    \item A milestone.
+    An Exalt increasing their Essence or purchasing a capstone charm can act as an exotic component.
+    This is appropriate when the Artifact is intended to fulfill the character’s legend, such as Invincible Sword Princess’ Daiklave.
+    \item A place. The Artifact may be created in a specific, unique location.
+  \end{itemize}
+
+
+  \subsubsection*{Practical Approach}
+  \begin{itemize}
+  \item Introducing a Fact (page 237) -- A player may roll to Introduce a fact regarding the disposition of an exotic component.
+  This roll has a difficulty of (Artifact’s rating+2, Legendary Artifacts count as 6 for this purpose).
+  The fact is a story hook for acquiring the EC.
+  At the ST’s discretion, multiple ECs may be declared with a single fact.
+  “There is an ancient tomb in this forest, avoided by locals and travellers alike.
+  It is the tomb of Ancev, a Necromancer; he imbued his Hand and Eye with strange power.”
+  \item Moment of Inspiration: This functions as introducing a Fact as above, with Wits+Craft.
+  The Crafter, in a moment of inspiration, sees something of use in his grand design.
+  This roll may be made once per story per slotted Artifact; each slotted Artifact can benefit from one such discovery per story.
+  It is possible in this case for the EC to immediately available.
+  Having slain the Deathknight and her terrifying steed, Jisara realizes the creature’s blood would be of use in her vampiric chakram.
+
+  \item Pure Awesome -- Once per story, when a PC does something exceptionally cool that awes the players(like a three dice stunt), a physical impression of that event remains in the world to be harvested.
+  This event scored at least (Artifact rating+3, Legendaries count as 6) successes.
+
+  \item Workings and WST -- A Sorcerer/Shaper may craft an exotic component.
+  Different levels of Artifact require different levels of Working: 1-3, Terrestrial. 4-5, Celestial. Legendary: Solar. Shapers need to succeed at the roll two phases earlier than it would take to create the Artifact. XP for the Working/Shaping may come from whomever benefits the most from the Artifact or split amongst characters.
+  \item Assistance -- At the ST’s discretion, the assistance of a powerful being such as a god or Demon may count as an EC.
+  \item Bargaining -- Sometimes NPCs have what you need.
+  \item Farming -- There are beings with the will and patience to cultivate ECs in some capacity.
+  That could include the PCs.
+  Cultivation includes rare starting resources, several rolls at relatively high difficulty, and a big dose of patience.
+  \end{itemize}
+  \clearpage
+
 
 \pgWithOverlay{245}{1.75}{1.45}{3.3}{3.3}{Repairing a broken artifact is generally as difficult as creating one a dot lower in rating, except that the interval may be significantly shorter depending on how extensive the damage is. Legendary artifacts, which go beyond the five dot scale, use difficulties, intervals and goal numbers chosen by the Storyteller - not all Legendary Artifacts are created equal, but they're all very difficult.
 
@@ -719,6 +806,7 @@ Creation's martial arts are the stuff of legend, powerful fighting styles that e
 \pdfbookmark[1]{The Exalted}{Exalted Antagonists}
 \pgs{540}{550}
 \pdfbookmark[1]{Animals}{Animals}
+\clearpage
 \pgWithOverlay{551}{8.1}{7.75}{3.3}{4.5}{\subsection*{Animals}
   \vspace{6pt}The animal life of Creation ranges from scurrying rats to rare megafauna and gargantuan saurian beasts. They are pets, beasts of burden, trained combatants, and roaming terrors.
 

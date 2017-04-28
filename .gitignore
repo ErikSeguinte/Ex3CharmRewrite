@@ -1,8 +1,6 @@
-Rewrite.log
-Rewrite.out
-Rewrite.aux
-CharmCards.log
-CharmCards.out
-CharmCards.aux
+*.log
+*.out
+*.aux
 Ex3Final.pdf
+*.pdf
 *.swp

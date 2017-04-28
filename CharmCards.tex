@@ -66,7 +66,133 @@
   The Solar adds +(motes spent) dice to an (Ability) roll, or +(motes spent / 2) to a static value derived from (Ability). Remember the “Using Charms and Charm Limitations” section above.
 
 % Copy any charms the character has from Charms.tex or MAcharms/ into this file after this line...
+\section*{Awareness}
+  \permanentCharm{Surprise Anticipation Method}
+  {Awareness 3}
+  The Solar takes no penalties to Awareness rolls to notice personal danger from being tired, asleep or unconscious. She wakes with a premonition of danger (though not its source) even if she fails such a roll.
 
+  In addition, for every 10 the Solar rolls on an Awareness check to notice or locate a hidden enemy, trap, or any source of harm not readily apparent, she gains 1m.
+
+  \section*{Medicine}
+
+  \charm{Ailment-Rectifying Method}
+  {3m}
+  {Simple}{Instant}{-}
+  {Medicine 2}
+  The Solar spends an hour treating a patient with herbs or other remedies appropriate to his disease, and rolls (Intelligence + Medicine) against the disease's Morbidity. As long as he spends his time resting and cared for, her patient receives half of her threshold successes on his next resistance roll.
+
+  With a repurchase at Medicine 3+, if she rolls twice the disease's Morbidity, she may spend an additional 3m to end it immediately - her patient recovers from the disease over the course of a day.
+
+  \charm{Contagion-Curing Touch}
+  {1m}
+  {Supplemental}{Instant}{-}
+  {Essence 2, Medicine 4, Ailment-Rectifying Method}
+  This charm supplements any Medicine roll to treat disease, allowing her to do so even if lacking the proper medicines or herbs. In addition, if the patient recovers, he gains (Solar's Essence) automatic successes on all rolls to resist disease for a season.
+
+ \charm{Wound-Cleansing Meditation}
+  {10m}
+  {Simple}{Instant}{-}
+  {Medicine 3}
+  The Solar spends an hour cleaning and wrapping her patient's wounds, after which he converts all Aggravated damage he's suffered to Lethal. She may also reattach any severed limbs or digits, as long as they're still fresh.
+
+  \charm{Wound-Mending Care Technique}
+  {5m}
+  {Simple}{Instant}{-}
+  {Medicine 3}
+  The Solar spends an hour doctoring a patient with bandages, herbs or other remedies and rolls (Intelligence + Medicine) against the highest wound penalty he suffers (5 for incapacitated). If he remains in bed for the rest of the day, he heals (Solar's Essence or three, whichever's higher) levels of Bashing or Lethal damage.
+
+  With a repurchase at Essence 3+, Once/Day she may have him instead heal by the time the treatment is complete, with no need for bed rest.
+
+  \charm{Instant Treatment Methodology}
+  {5m, 1wp or 5i, 1wp}
+  {Supplemental}{Instant}{-}
+  {Essence 2, Medicine 4, Wound-Mending Care Technique}
+  This charm supplements any Medicine charm that requires an hour of treatment, reducing it to seconds (a single combat action). An appropriate stunt may remove the need for tools as well.
+
+  \charm{Wholeness-Restoring Meditation}
+  {7m, 1wp}
+  {Simple}{Until treatment ends}{-}
+  {Essence 3, Medicine 5, Wound Mending Care Technique}
+  This Lawgiver begins treating a patient with some sort of permanent debilitation. The Storyteller should decide if this is Minor, Major or Defining. She begins an extended (Intelligence + Medicine) roll, difficulty 5 and terminus 5. The interval and goal depends on the severity.
+
+  \begin{itemize}
+    \item Minor - Goal 10, interval one hour. Minor debilitates include major scars, missing ears, simple wyld mutations and Minor derangements.
+    \item Major - Goal 20, interval one day. Major debilitates include congenital blindness, missing hands and Major derangements.
+    \item Defining - Goal 25, interval one week. Defining debilitates include missing limbs, burned out eyes and Defining derangements.
+  \end{itemize}
+
+  If she succeeds in the extended roll, her patient is cured of the issue at hand. If she botches a roll or fails to reach the goal inside the Terminus, the Solar may not try again until she learns a new Medicine charm.
+
+  \section*{Melee}
+  \charm{Dipping Swallow Defense}
+  {2m}
+  {Supplemental}{Instant}{-}
+  {Melee 1}
+  This charm supplements a Parry. The Solar ignores all non-surprise penalties to her Parry.
+
+
+
+  At Essence 2+ she may spend an additional 3m when activating this charm to parry unblockable attacks.
+
+
+  \charm{Summoning the Loyal Steel}
+  {1m}
+  {Simple}{Indefinite}{Stackable}
+  {Melee 3}
+  The Solar banishes a weapon she's holding Elsewhere. It reappears in her hand when the charm ends.
+
+  \permanentCharm{Excellent Friend Approach}
+  {Essence 2, Presence 3}
+  When attempting a Persuade action against people who have a positive Tie to her, the Solar and her target treat that Intimacy as one step more powerful. If the Tie is already defining, increase the bonus or penalty from the Tie by one.
+
+  \section*{Resistance}
+
+  \permanentCharm{Ox-Body Technique}
+  {Resistance 2}
+  The Solar gains a number of health levels depending on her Stamina:
+
+  \begin{tabular}{ll}
+    Stamina & Health Levels\\
+    \hline
+    1-3 & -1 and -2 \\
+    4-5 & -0, -1 and -2 \\
+  \end{tabular}
+
+  If her Stamina later changes, update her health track to match the new bonuses. This charm may be purchased (and stacks) up to (Resistance - 1) times.
+
+  \charm{Whirlwind Armor-Donning Prana}
+  {3m per mobility penalty}
+  {Supplemental}{Indefinite}{-}
+  {Resistance 1}
+  This charm supplements donning armor. It takes ([armor's mobility penalty] + 1) turns to put it on, rather than that many minutes. Reduce the mobility penalty to 0.
+
+  \charm{Hauberk-Summoning Gesture}
+  {3m}
+  {Reflexive}{Indefinite}{-}
+  {Essence 2, Resistance 2, Whirlwind Armor-Donning Prana}
+  The Solar banishes a suit of armor she's wearing, and optionally a shield, Elsewhere. When she ends the charm, it returns around her as though she's just put it on.
+
+  \charm{Spirit Strengthens the Skin}
+  {1m per soak}
+  {Supplemental}{Instant}{Post-roll}
+  {Resistance 2}
+  This charm supplements the Solar's defense, after a withering attack has been rolled but before damage. She gains +1 soak per 1m spent, to a maximum of doubling her natural soak.
+
+  \charm{Adamant Skin Technique}
+  {8m}
+  {Supplemental}{Instant}{-}
+  {Essence 2, Resistance 5, Spirit Strengthens the Skin}
+  This charm supplements the Solar's defense against a Decisive attack. Reduce the raw damage of the attack by (Solar's soak), but she may not apply her hardness against it.
+
+  It can also be used to completely block uncountable reoccurring damage, such as from an explosion or collapsing building.
+  
+  \section*{Ride}
+
+  \permanentCharm{Master Horseman's Techniques}
+  {Ride 1}
+  The Solar will never chafe or develop sores from long riding, and her mount will not suffer random harmful incidents like thrown shoes or injured hooves. She will not fall off her mount during normal travel while sleeping or incapacitated, and against attacks which would knock her from her mount she gains +1 Dodge or Parry.
+
+  She may reflexively spend 1m to call a loyal mount to her side, regardless of distance. It makes its way to her as circumstances allow. The Solar may also reflexively spend 1m to prevent her mount fro panicking, whether from mundane or supernatural fear.
 % ...and before this.
 \end{multicols}
 \end{document}

@@ -18,6 +18,9 @@
 \usepackage[absolute,overlay]{textpos}
 \usepackage[space]{grffile}
 \usepackage{microtype}
+\usepackage{booktabs}
+\usepackage[normalem]{ulem}
+\useunder{\uline}{\ul}{}
 
 \title{Charms Rewrite}
 \date{2016-07-26}
@@ -408,6 +411,35 @@
 
 	\par Major projects are significant endeavors within a craftsman's trade, anything larger or more complex than a wheelbarrow. They include forging suits of armor, preparing a banquet fit for a prince's table or a god's festival, or sculpting a statue. They are resolved by extended rolls with no fixed terminus, where each roll represents an expenditure of time and materials.
 
+
+	\begin{sidebar}{Large Scale Projects}
+
+	\par
+	Multiple related projects can be abstracted into a single large project.
+	Instead of a thousand small projects to equip a legion,
+	a Crafter can instead use a single Large Project.
+	Large projects may include a mansion, creating the furniture for a mansion, or building a ship.
+	Large Projects have the unique component of Scale, an abstraction of size and complexity.
+	Large Projects require unskilled (Scale) labor and (Scale-1) skilled labor.
+	The Crafter rolls normally, modelling his ability to supervise and manifest his vision.
+
+	  \centering
+	\label{my-label}
+	\begin{tabular}{@{}lllllp{2.75in}@{}}
+	\toprule
+	Scale & Interval & Labor         & Diff & Goal\# & Examples                                                                              \\ \midrule
+	1     & Day      & A handful     & 2          & 25     & A sturdy hut, a dingy, equip a Fang.                                                  \\
+	2     & Week     & A dozen or so & 3          & 30     & A spacious house, several sturdy huts, a sailboat, equip a Scale.                     \\
+	3     & Season   & Several dozen & 4          & 40     & A sprawling compound or mansion, a warship, equip a Wing.  \\
+	4     & Year     & hundreds      & 5          & 50     & An Emperor’s palace, a small fleet of warships, a great trade galley, equip a Dragon. \\
+	5     & Years    & Thousands     & 5          & 75     & A mid-sized city, a frightening war or trade fleet, equip a Legion.                   \\
+	N/A   & ???      & ???           & ???        & ???    & The Imperial Palace, the White Sea Dam, Whitewall                                     \\ \bottomrule
+	\end{tabular}
+
+	A Crafter may decrease the Interval period by one level by increasing labor by one level. 
+	\end{sidebar}
+
+
 	\par Essence-wielders may also attempt to create Artifacts and Manses, which do have a terminus set by the crafter's available resources. The difficulty, interval and goal number are determined by artifact rating. These intervals assume about four hours of work each day, but cannot be decreased by spending more time working (though a character would work on multiple projects simultaneously if they had nothing else to do).
 
 	\begin{tabular}{ccccc}
@@ -432,7 +464,7 @@
 	  \textbullet\textbullet\textbullet\textbullet & Twice per Story \\
 	  \textbullet\textbullet\textbullet\textbullet\textbullet & Once per Story \\
 	  Greater Manse & Once per Story \\
-	  end{tabular}
+	\end{tabular}
 
 	  \par To find the terminus for an Artifact-creation roll, add together the factors for their workshop and their materials. If you're missing either, you can't even start.
 

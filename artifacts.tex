@@ -1,0 +1,68 @@
+\documentclass[article, letterpaper, twocolumn]{memoir}
+
+\setlrmarginsandblock{1in}{*}{*}
+\setulmarginsandblock{1in}{*}{*}
+\checkandfixthelayout
+
+\usepackage{fontspec}
+\newfontfamily\chapfont{Envision}
+\usepackage{microtype}
+\usepackage{forloop}
+\usepackage[dvipsnames]{xcolor}
+
+\newcounter{x}
+\newcommand{\rating}[1]{
+  \forloop{x}{0}{\value{x}<#1}{\textbullet{}}
+}
+\pagestyle{plain}
+\setlength\parindent{0pt}
+\setlength\parskip{15pt}
+
+
+\newcommand{\artifact}[3]{
+  \parbox{\linewidth}{
+    \par \textbf{\color{MidnightBlue}#1\\
+      (#2)\\
+      Artifact\rating{#3}\vspace{2pt}}}
+}
+\newcommand{\charm}[6]{
+  \parbox{\linewidth}{
+    \par \textbf{\color{MidnightBlue}#1}\vspace{2pt} \\
+    \ifthenelse{\equal{#5}{-}}{ % No keywords
+      \textbf{Cost:} #2; #3 (#4) \\
+      \textbf {Prereqs:} #6
+    }{ % Has keywords
+      \textbf{Cost:} #2 ; #3 (#4) - #5 \\
+      \textbf {Prereqs:} #6
+    }
+  }
+  \par
+}
+
+\begin{document}
+\artifact{Singing Staff}{White Jade Grand Goremaul}{3}
+The Singing Staff Demonstrates the odd approach to magic taken by some First Age magicians.
+This man-high staff of white jade is carved in an irregular series of waves and swellings, with a knot at each end.
+When rubbed with a rosined bow, the singing staff emits a sweet tone, like a musical saw, with different parts of the staff playing different pitches and timbres.
+
+If one plants the end of the singing staff on the ground and plays it correctly, the land responds to the music, rising and falling like waves or shaping itself like clay molded by unseen hands.
+This makes the singing staff precious as both a tool and a weapon: The staff can topple castle walls as easily as it digs canals.
+The Staff's uses are limited only by the skills of it's player.
+
+The Singing staves are immensely sophisticated devices despite their simple appearance. 
+Only six were ever known to exist.
+One is in the hands of the Empress and is stored among her personal effects,
+one is at the Heptagram for study,
+and one is held by the Immaculate Monks, who use it for geomantic landscaping.
+Two used to be held by the Realm military, but one was lost in battle with the Tepet legions, and the other lies at the bottom of the inland Sea.
+Finally, the personal staff of the legendary solar architect Kal Bax disappeared along with him during the Usurpation. Although the effects of the staves are functionally identical
+\fancybreak{* * *}
+\subsection{Evocations}
+\charm{The earth itself is moved}
+{4m, 1wp}
+{Reflexive}{One Scene}{Perilous}
+{Attunement}
+  This charm allows the Staff's wielder to make gambits using (Charisma + Performance) that make use of rough manipulation of earth.
+    It also allows her to include minor acts of earth manipulation in her combat stunts
+\end{document}
+

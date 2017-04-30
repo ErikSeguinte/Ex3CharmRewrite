@@ -132,6 +132,8 @@
     \end{textblock}
     -
     \clearpage
+
+
   }{
     \subsection*{Page #1}
     #6
@@ -169,6 +171,12 @@
 {
   \clearpage
   \ClearShipoutPicture
+}
+
+% Produces Rating dots without writing out the commands.
+\newcounter{x}
+\newcommand{\rating}[1]{
+  \forloop{x}{0}{\value{x}<#1}{\textbullet{}}
 }
 
 \pagestyle{fancy}
